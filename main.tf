@@ -17,7 +17,7 @@ module "dcos" {
   }
 
   cluster_name        = "mke-demo"
-  ssh_public_key_file = "/home/kensey/.ssh/id_rsa.pub"
+  ssh_public_key_file = "id_rsa.pub"
   admin_ips           = ["${data.http.whatismyip.body}/32"]
 
   num_masters        = 1
