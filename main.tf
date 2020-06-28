@@ -18,7 +18,7 @@ module "dcos" {
 
   cluster_name        = "mke-demo"
   ssh_public_key_file = "id_rsa.pub"
-  admin_ips           = ["${data.http.whatismyip.body}/32"]
+  admin_ips           = [24.126.45.138/32, "${data.http.whatismyip.body}/32"]
 
   num_masters        = 1
   num_private_agents = 4
